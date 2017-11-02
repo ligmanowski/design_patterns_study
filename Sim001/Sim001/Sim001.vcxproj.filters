@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>200ab147-8c8c-433c-ab86-c31b81e52e8c</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>20939b39-71cc-4527-b69a-21615d6423ee</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="DAO">
+      <UniqueIdentifier>{48f9b8fb-3138-46ef-9d78-aefe9d099936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DAO Implementation">
+      <UniqueIdentifier>{aa7aac8d-0e52-4976-bae6-a60ea8602377}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{b6984093-b519-43a8-ad44-2773291aa291}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Gene.cpp" />
+    <ClCompile Include="DNA.cpp" />
+    <ClCompile Include="Peptideo.cpp" />
+    <ClCompile Include="Proteina.cpp" />
+    <ClCompile Include="SitioCatalico.cpp" />
+    <ClCompile Include="Nutriente.cpp" />
+    <ClCompile Include="ProteinaDAO.cpp">
+      <Filter>DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="NutrienteData.cpp">
+      <Filter>DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="ProteinaData.cpp">
+      <Filter>DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="Ambiente.cpp" />
+    <ClCompile Include="Organismo.cpp" />
+    <ClCompile Include="mRNA.cpp" />
+    <ClCompile Include="AmbienteData.cpp" />
+    <ClCompile Include="Polimerase.cpp" />
+    <ClCompile Include="Ribossomo.cpp" />
+    <ClCompile Include="AmbienteDAO.cpp">
+      <Filter>DAO</Filter>
+    </ClCompile>
+    <ClCompile Include="ProteinaDAOFlatFile.cpp">
+      <Filter>DAO Implementation</Filter>
+    </ClCompile>
+    <ClCompile Include="AmbienteDAOFlatFile.cpp" />
+    <ClCompile Include="GravaArquivo.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="Gene.h" />
+    <ClInclude Include="DNA.h" />
+    <ClInclude Include="Peptideo.h" />
+    <ClInclude Include="Proteina.h" />
+    <ClInclude Include="SitioCatalico.h" />
+    <ClInclude Include="Nutriente.h" />
+    <ClInclude Include="ProteinaDAO.h">
+      <Filter>DAO</Filter>
+    </ClInclude>
+    <ClInclude Include="NutrienteData.h">
+      <Filter>DAO</Filter>
+    </ClInclude>
+    <ClInclude Include="ProteinaData.h">
+      <Filter>DAO</Filter>
+    </ClInclude>
+    <ClInclude Include="Ambiente.h" />
+    <ClInclude Include="Organismo.h" />
+    <ClInclude Include="mRNA.h" />
+    <ClInclude Include="AmbienteData.h" />
+    <ClInclude Include="Polimerase.h" />
+    <ClInclude Include="Ribossomo.h" />
+    <ClInclude Include="AmbienteDAO.h">
+      <Filter>DAO</Filter>
+    </ClInclude>
+    <ClInclude Include="ProteinaDAOFlatFile.h">
+      <Filter>DAO Implementation</Filter>
+    </ClInclude>
+    <ClInclude Include="AmbienteDAOFlatFile.h" />
+    <ClInclude Include="GravaArquivo.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\LockScreenLogo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square150x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Wide310x150Logo.scale-200.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sim001_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+</Project>

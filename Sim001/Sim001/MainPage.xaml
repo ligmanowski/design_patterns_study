@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="Sim001.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Sim001"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+<!-- FORMATAÇÃO VISUAL DO APP PARA TELAS RESPONSIVAS-->
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-519,0">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="wideState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="741"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="narrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="contentPanel.Margin" Value="20,30,0,0"/>
+                        <Setter Target="inputPanel.Orientation" Value="Vertical"/>
+                        <Setter Target="inputAmbienteButton.Margin" Value="0,4,0,0"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+<!-- FIM DA FORMATAÇÃO VISUAL DO APP PARA TELAS RESPONSIVAS-->
+
+        <StackPanel x:Name="contentPanel" Margin="120,30,0,0">
+            <TextBlock HorizontalAlignment="Left" Text="Simulador da regulação da expressão gênica em E.Coli" FontSize="24"/>
+            <TextBlock Text="Qual ambiente será simulado" FontSize="18" Style="{StaticResource BaseTextBlockStyle}"/>
+            <StackPanel x:Name="inputPanel" Orientation="Horizontal" Margin="0,20,0,20">
+                <TextBox x:Name="ambienteInput" Width="300" HorizontalAlignment="Left"/>
+                <Button x:Name="inputAmbienteButton" Content="Carregar ambiente solicitado" Click="inputAmbienteButton_Click"/>
+            </StackPanel>
+            <TextBlock x:Name="ambienteOutput" FontSize="18" Style="{StaticResource BaseTextBlockStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>
